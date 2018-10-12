@@ -1,0 +1,26 @@
+{
+  "name": "Ingredient",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "quantity": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "food": {
+      "type": "hasOne",
+      "model": "Food",
+      "foreignKey": "foodId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

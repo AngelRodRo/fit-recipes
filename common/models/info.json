@@ -1,0 +1,28 @@
+{
+  "name": "Info",
+  "plural": "Info",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "carbohydrates": {
+      "type": "string",
+      "required": true
+    },
+    "proteins": {
+      "type": "number",
+      "required": true
+    },
+    "fat": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+  },
+  "acls": [],
+  "methods": {}
+}
